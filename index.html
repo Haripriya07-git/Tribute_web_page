@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Ratan Tata</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #2a6d62; /* Myrtle Green */
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #3AB09E; /* Keppel */
+        }
+
+        /* Sections */
+        .section {
+            min-height: 100vh;
+            padding: 80px 20px 20px;
+            text-align: center;
+        }
+
+        /* Home Section */
+        #home {
+            background: linear-gradient(to bottom right, #3a7bd5, #00d2b3, #bc4e9c);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #home img {
+            width: 600px; /* Rectangular width */
+            height: 400px; /* Rectangular height */
+            margin-bottom: 20px;
+            border: 5px solid #fff;
+        }
+
+        #home h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: black; /* Text color */
+        }
+
+        #home p {
+            font-size: 1.8rem; /* Increased font size */
+            color: black; /* Text color */
+        }
+
+        /* Awards Section */
+        #awards {
+            background: linear-gradient(to bottom, #40E0D0, #F8D568, #9932CC);
+            color: black; /* Set font color to black */
+        }
+
+        #awards h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #awards img {
+            width: 400px;
+            height: 250px;
+            margin: 10px auto;
+            display: block;
+            border-radius: 10px;
+            border: 3px solid #fff;
+        }
+
+        #awards ul {
+            list-style: none;
+            margin: 20px auto;
+            font-size: 1.2rem;
+            color: black; /* Set list items' font color to black */
+        }
+
+        #awards ul li {
+            margin-bottom: 10px;
+        }
+
+        /* About Section */
+        #about {
+            background: linear-gradient(to bottom right, #003366, #2E8B57);
+            color: #fff;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #about img {
+            width: 350px; /* Reduced width for a smaller size */
+            height: 250px; /* Ensuring a rectangular shape */
+            margin: 10px auto;
+            display: block;
+            border-radius: 10px;
+            border: 2px solid #fff; /* Optional border for styling */
+        }
+
+        #about p {
+            font-size: 1.2rem;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        /* Legacy Projects Section */
+        #legacy {
+            background: linear-gradient(to bottom, #FFD700, #FF8C00); /* Gold and Dark Orange */
+            color: #000;
+        }
+
+        #legacy h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #legacy img {
+            width: 500px;
+            height: 300px;
+            margin: 10px auto;
+            display: block;
+            border-radius: 10px;
+            border: 3px solid #000;
+        }
+
+        #legacy p {
+            font-size: 1.2rem;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        /* Scroll Behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#legacy">Legacy Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <img src="ratan.tata.jpg" alt="Ratan Tata">
+        <h1>Ratan Tata</h1>
+        <p>The Visionary Leader and Philanthropist</p>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="section">
+        <h2>Awards & Recognitions</h2>
+        <img src="ratan.tata2.jpg" alt="Awards Image">
+        <ul>
+            <li>Padma Bhushan - 2000</li>
+            <li>Padma Vibhushan - 2008</li>
+            <li>Honorary Doctorate from Cornell University</li>
+            <li>Lifetime Achievement Award - 2021</li>
+        </ul>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Ratan Tata</h2>
+        <img src="ratan.tata3.jpg" alt="About Image">
+        <p>
+            Ratan Naval Tata, an Indian industrialist and philanthropist, is the chairman emeritus of Tata Sons.
+            He was the chairman of the Tata Group, one of India's largest conglomerates, from 1991 to 2012.
+            Known for his visionary leadership and charitable efforts, he has left an indelible mark on India and the world.
+        </p>
+    </section>
+
+    <!-- Legacy Projects Section -->
+    <section id="legacy" class="section">
+        <h2>Legacy Projects</h2>
+        <img src="ratan.tata4.jpg" alt="Legacy Project Image">
+        <p>
+            Ratan Tata spearheaded numerous innovative projects, including the Tata Nano, the world's most affordable car,
+            and the acquisition of iconic brands like Jaguar Land Rover. His focus on sustainability and social impact has
+            been instrumental in shaping the future of Indian industries.
+        </p>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Add a simple alert on page load
+        window.onload = function() {
+            alert("Welcome to the Tribute Page of Ratan Tata!");
+        };
+
+        // Smooth scrolling for navigation links
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                window.scrollTo({
+                    top: targetSection.offsetTop - 60, // Adjust for navigation bar height
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
